@@ -11,4 +11,9 @@ Restaurant.destroy_all
   puts restaurant.name
 end
 
-puts 'finished'
+
+
+Review.create(restaurant: Restaurant.first, content: "Amazing food")
+Review.create(restaurant: Restaurant.first, content: "Incredible food")
+
+puts 'Finished'
